@@ -12,7 +12,6 @@ public unsafe class GLTexture
 {
     public uint handle;
     public int width, height;
-    public bool reverse;
 
     GL internalFormat;
 
@@ -54,7 +53,6 @@ public unsafe class GLTexture
         width = _width;
         height = _height;
         handle = textureMap;
-        reverse = false;
     }
 
     public static GLTexture LoadFromFile(OpenGL gl, string path)

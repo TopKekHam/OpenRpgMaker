@@ -7,12 +7,9 @@ public unsafe class GLBuffer
     public GL type { get; private set; }
     public uint handle { get; private set; }
 
-    OpenGL gl;
-
-    public GLBuffer(OpenGL gl, GL type, string name = "Buffer")
+    public GLBuffer(GL type, string name = "Buffer")
     {
         this.type = type;
-        this.gl = gl;
         handle = glGenBuffer(name);
     }
 

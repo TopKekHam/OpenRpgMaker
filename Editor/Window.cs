@@ -115,7 +115,7 @@ public class Window
 
     public static WindowEvent QuitEvent = new WindowEvent();
     public static WindowEvent<Vector2I> ResizeEvent = new WindowEvent<Vector2I>();
-    public static WindowEvent<string?> TextEvent = new WindowEvent<string>();
+    public static WindowEvent<string?> TextEvent = new WindowEvent<string?>();
 
     public static IntPtr WindowHandle;
 
@@ -179,11 +179,5 @@ public class Window
     {
         SDL_GL_SwapWindow(WindowHandle);
     }
-
-    //public static Box GetSizeBox()
-    //{
-    //    var size = GetSize();
-    //    return new Box(size.X, size.Y);
-    //}
 
 }
